@@ -1,24 +1,25 @@
+import { Route, Routes } from 'react-router-dom';
+
 import '../styles/App.scss';
-//import { Route, Routes } from 'react-router-dom';
-//import logo from '../images/logo.jpg';
-//import { useEffect, useState } from "react";
-//import ls from "../services/localStorage";
-//import {Link, Route} from 'react-router-dom';
-////import PropTypes from "prop-types";
+import '../styles/Login.scss';
+import '../styles/Notfound.scss';
+import './Login';
+import Login from './Login';
+import Registration from './Registration';
+import Planets from './Planets';
+import NotFound from './Notfound';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route path="/Registration" element={<Registration />} />
+        <Route path="/Planets" element={<Planets />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
-
-/*<Route to='/ruta' element={contenido_que_se_quiere_mostrar} /> */
-
-/*<Link to='/contacto' className='link' id='contact-link' target='_blank'>
-  Ir a contacto
-</Link> */
-
-/*NombreDelComponente.propTypes = {
-  nombreDeLaPropOpcional: PropTypes.string,
-  nombreDeLaPropObligatoria: PropTypes.string.isRequired,
-}; */
