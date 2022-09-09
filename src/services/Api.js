@@ -1,25 +1,21 @@
-/*const getList = () => {
-    return (
-      fetch(
-        'https://beta.adalab.es/curso-intensivo-fullstack-recursos/apis/quotes-friends-tv-v1/quotes.json'
-      )
-        //tranformame los datos a json y de cada item quiero que me
-        .then((response) => response.json())
-        .then((data) => {
-          const cleanData = data.map((item) => {
-            //devuelvas de la lista de datos lo que yo quiero:
-            return {
-              quote: item.quote,
-              character: item.character,
-            };
-          });
-          //devuelveme los datos que quiero que te he escrito arriba
-          //estos datos los guardo en cleanData
-          console.log(cleanData);
-          return cleanData;
-        })
-    );
-  };
-  
-  //EXPORTAR EL SERVICIO FETCH
-  export default getList;*/
+const getList = () => {
+  return fetch('https://swapi.dev/api/planets/')
+    .then((response) => response.json())
+
+    .then((data) => {
+      console.log(data);
+      const cleanData = data.results.map((item) => {
+        return {
+          name: item.name,
+          population: item.population,
+          diameter: item.diameter,
+          terrain: item.terrain,
+          films: item.films,
+        };
+      });
+      return cleanData;
+    });
+};
+
+//EXPORTAR EL SERVICIO FETCH
+export default getList;

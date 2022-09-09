@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.png';
 function Login() {
   //error
   const [errorMessages, setErrorMessages] = useState({});
@@ -52,40 +53,40 @@ function Login() {
   };
 
   return (
-    <>
-      <header>
-        <section>
-          <h2>Star Wars Planets</h2>
-          <p>
-            On this website you can search for the different planets of the Star
-            Wars saga through our search engine.
-          </p>
-        </section>
-      </header>
-      <main>
-        <form onSubmit={handleSubmit}>
-          <div className="input-container">
-            <label>Username</label> <input type="text" name="uname" required />
-            {renderErrorMessage('uname')}
-          </div>
-          <div className="input-container">
-            <label>Password</label>
-            <input type="password" name="pass" />
+    <div className="login">
+      <section className="sectionLogin">
+        <img className="sectionLogin__logo" src={logo} alt="Image Yoda" />
+        <p className="sectionLogin__p">
+          On this website you can search for the different planets of the Star
+          Wars saga through our search engine.
+        </p>
+      </section>
 
-            {renderErrorMessage('pass')}
-          </div>
+      <form className="login__form" onSubmit={handleSubmit}>
+        <div className="input-container">
+          <label>
+            <strong>Username</strong>
+          </label>{' '}
+          <input type="text" name="uname" required />
+          {renderErrorMessage('uname')}
+        </div>
+        <div className="input-container">
+          <label>
+            <strong>Password</strong>
+          </label>
+          <input type="password" name="pass" />
 
-          <div className="button-container">
-            <Link to="/Planets">
-              <button>Enter</button>
-            </Link>
-          </div>
-          <Link to="/Registration">
-            <p>Registrer</p>
-          </Link>
-        </form>
-      </main>
-    </>
+          {renderErrorMessage('pass')}
+        </div>
+
+        <div className="button-container">
+          <button className="button">Enter</button>
+        </div>
+        <Link to="/Registration">
+          <p className="login__form__p">Registrer</p>
+        </Link>
+      </form>
+    </div>
   );
 }
 export default Login;

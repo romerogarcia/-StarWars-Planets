@@ -1,4 +1,4 @@
-import '../styles/Notfound.scss';
+import '../styles/Layout/Notfound.scss';
 import { Link } from 'react-router-dom';
 const NotFoundElement = () => {
   return (
