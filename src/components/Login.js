@@ -15,22 +15,17 @@ function Login() {
   const database = [
     {
       username: 'Luke',
-      password: 'skywalke',
+      password: 'Skywalker',
     },
     {
       username: 'Leia',
-      password: 'skywalke',
+      password: 'Skywalker',
     },
   ];
 
   const errors = {
     uname: 'invalid username',
     pass: 'invalid password',
-  };
-
-  //button
-  const handleClick = () => {
-    return <Link to="/Planets"></Link>;
   };
 
   const handleSubmit = (event) => {
@@ -81,7 +76,9 @@ function Login() {
           </div>
 
           <div className="button-container">
-            <button onClick={handleClick}>Enter</button>
+            <Link to="/Planets">
+              <button>Enter</button>
+            </Link>
           </div>
           <Link to="/Registration">
             <p>Registrer</p>
