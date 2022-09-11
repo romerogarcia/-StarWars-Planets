@@ -7,7 +7,9 @@
     gap: 20px;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-image: url(../../images/backgroundLogin.jpg);
+    background-image: url(../../images/planet2.gif);
+background-repeat: no-repeat;
+background-size: 100% 100%;
     
     &__form{
       display: flex;
@@ -38,10 +40,12 @@
     color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 450px;
+    text-align:center;
   }
   &__logo{
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 160px;
     margin-bottom: 10px;
   }
 }
