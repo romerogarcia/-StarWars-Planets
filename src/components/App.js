@@ -13,14 +13,14 @@ import NotFound from './Notfound';
 import getList from '../services/Api';
 
 function App() {
-  /*const [dataList, setDataList] = useState([]);
+  const [dataList, setDataList] = useState([]);
 
   useEffect(() => {
     getList().then((dataFromApi) => {
       setDataList(dataFromApi);
     });
     console.log(getList);
-  }, []);*/
+  }, []);
 
   return (
     <>

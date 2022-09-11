@@ -1,10 +1,13 @@
+//import { getList } from '../../src/services/Api';
+//import { useEffect } from 'react';
+
 function Planets() {
   return (
     <>
       <section className="planets">
-        <ol>
+        <ul>
           <li></li>
-        </ol>
+        </ul>
       </section>
     </>
   );
