@@ -15,17 +15,18 @@ background-size: 100% 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #191919;
+      background-color: $background;
         &__p{
-          color: rgb(255, 255, 59);
+          color: $detail--yellow;
             text-decoration: none;
             margin-top: 10px;
             margin-bottom: 20px;
         }
         &__title{
-          color: rgb(255, 255, 59);
+          color: $detail--yellow;
           margin-top: 20px;
           margin-bottom: 20px;
+          letter-spacing: 3px;
         }
     }
   }
@@ -38,10 +39,10 @@ background-size: 100% 100%;
   &__title{
     font-size: 40px;
     margin-bottom: 20px;
-    color: #fff;
+    color: $detail--white;
   }
   &__p{
-    color: #fff;
+    color: $detail--white;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 450px;
@@ -58,7 +59,7 @@ background-size: 100% 100%;
   input[type="password"] {
     height: 40px;
     width: 350px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid $border;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 20px;
@@ -67,23 +68,23 @@ background-size: 100% 100%;
   
   .button {
     margin-top: 10px;
-    width: 370px;
+    width: 350px;
     cursor: pointer;
     font-size: 15px;
-    background: #383838;
-    border: 1px solid #383838;
-    color: #fff;
+    background: $background--gray;
+    border: 1px solid $background--gray;
+    color: $detail--white;
     padding: 10px 20px;
     margin-bottom: 10px;
     &:hover{
-      background-color: #066163;
-      color: #fff;
-      border: 1px solid #066163;
+      background-color: $button--color;
+      color: $detail--white;
+      border: 1px solid $button--color;
     }
   }
   
   input[type="submit"]:hover {
-    background: #000000;
+    background: $background;
   }
   
   .button-container {
@@ -92,9 +93,9 @@ background-size: 100% 100%;
   }
   
   .login-form {
-    background-color: white;
+    background-color: $detail--white;
     padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 $border, 0 6px 20px 0 $border;
   }
   
   .list-container {
@@ -102,7 +103,7 @@ background-size: 100% 100%;
   }
   
   .error {
-    color: red;
+    color: $error;
     font-size: 12px;
   }
   

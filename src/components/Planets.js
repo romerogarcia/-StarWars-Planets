@@ -2,6 +2,7 @@
 //import { useEffect } from 'react';
 import { useEffect, useState } from 'react';
 import getList from '../services/Api';
+import PlanetDetails from './PlanetDetails';
 
 function Planets() {
   const [starWarsData, setStarWarsData] = useState([]);
@@ -33,20 +34,12 @@ function Planets() {
 
   const renderPlanets = () => {
     // Pintamos el listado de personajes respondido por la API
-    return starWarsData.map((item, index) => {
+    return starWarsData.map((item) => {
       // La API no nos devuelve un id para cada personaje, por eso usamos el index que nos da el map
       return (
-        <section className="planets__container">
-          <div key={index} className="planets__container__list">
-            <h4 className="planets__container__list__element">{item.name}</h4>
-            <p className="planets__container__list__element">
-              {item.population}
-            </p>
-            <p className="planets__container__list__element">{item.diameter}</p>
-            <p className="planets__container__list__element">{item.terrain}</p>
-            <p className="planets__container__list__element">{item.films}</p>
-          </div>
-        </section>
+        <div>
+          <PlanetDetails item={item} />
+        </div>
       );
     });
   };
@@ -54,7 +47,8 @@ function Planets() {
   return (
     <div>
       <section className="planets">
-        <ul>{renderPlanets()}</ul>
+        <h3 className="planets__title"> Planet Details </h3>
+        <div className="planets__container">{renderPlanets()}</div>
       </section>
     </div>
   );
