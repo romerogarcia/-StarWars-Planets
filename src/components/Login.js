@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+//import planets from './Planets';
 import logo from '../images/logo.png';
 //import Planets from '../components/Planets';
 function Login() {
   //error
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const navigate = useNavigate();
 
   //error
   const renderErrorMessage = (name) =>
@@ -46,6 +50,7 @@ function Login() {
         setErrorMessages({ name: 'pass', message: errors.pass });
       } else {
         setIsSubmitted(true);
+        navigate('planets');
       }
     } else {
       // Username not found
