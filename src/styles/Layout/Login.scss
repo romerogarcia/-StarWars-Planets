@@ -15,13 +15,17 @@ background-size: 100% 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: rgba(255, 255, 255, .15); 
-        backdrop-filter: blur(5px);
+      background-color: #191919;
         &__p{
-          color: black;
+          color: rgb(255, 255, 59);
             text-decoration: none;
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        &__title{
+          color: rgb(255, 255, 59);
+          margin-top: 20px;
+          margin-bottom: 20px;
         }
     }
   }
@@ -55,23 +59,26 @@ background-size: 100% 100%;
     height: 40px;
     width: 350px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
     padding-left: 20px;
-    border-radius: 10px;
+    
   }
   
   .button {
     margin-top: 10px;
-    width: 150px;
+    width: 370px;
     cursor: pointer;
     font-size: 15px;
-    background: #000000;
-    border: 1px solid #000000;
+    background: #383838;
+    border: 1px solid #383838;
     color: #fff;
     padding: 10px 20px;
+    margin-bottom: 10px;
     &:hover{
-      background-color: rgb(255, 255, 59);
-      color: #000000;
-      border: 1px solid rgb(255, 255, 59);
+      background-color: #066163;
+      color: #fff;
+      border: 1px solid #066163;
     }
   }
   

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
+//import Planets from '../components/Planets';
 function Login() {
   //error
   const [errorMessages, setErrorMessages] = useState({});
@@ -29,7 +30,7 @@ function Login() {
     pass: 'invalid password',
   };
 
-  const handleSubmit = (event) => {
+  function handleSubmit(event) {
     //Prevent page reload
     event.preventDefault();
 
@@ -50,7 +51,7 @@ function Login() {
       // Username not found
       setErrorMessages({ name: 'uname', message: errors.uname });
     }
-  };
+  }
 
   return (
     <div className="login">
@@ -63,18 +64,13 @@ function Login() {
       </section>
 
       <form className="login__form" onSubmit={handleSubmit}>
+        <h3 className="login__form__title">SIGN IN</h3>
         <div className="input-container">
-          <label>
-            <strong>Username</strong>
-          </label>{' '}
-          <input type="text" name="uname" required />
+          <input type="text" name="uname" placeholder="Username" required />
           {renderErrorMessage('uname')}
         </div>
         <div className="input-container">
-          <label>
-            <strong>Password</strong>
-          </label>
-          <input type="password" name="pass" />
+          <input type="password" name="pass" placeholder="Password" required />
 
           {renderErrorMessage('pass')}
         </div>

@@ -11,12 +11,7 @@ background-size: contain;
 display: flex;
 flex-direction: column;
 align-items: center;
- &__title{
-        margin-top: 10px;
-        margin-bottom: 30px;
-        font-size: 40px;
-        color: white;
-    }
+
     &__form{
         display: flex;
         flex-direction: column;
@@ -25,12 +20,20 @@ align-items: center;
         height: 450px;
         padding-top: 20px;
         border-radius: 20px;
-        background-color: rgba(255, 255, 255, .15); 
-        backdrop-filter: blur(5px);
+        background-color: #191919;
+        &__title{
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 25px;
+            color: rgb(255, 255, 59);
+        }
         &__p{
-            color: black;
+            color: #5a5a5a;
             text-decoration: none;
             margin-top: 10px;
+        }
+        &__span{
+            color: rgb(255, 255, 59);
         }
     }
 
@@ -45,4 +48,9 @@ align-items: center;
         margin-top: 115px;
         
     }
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
 }
