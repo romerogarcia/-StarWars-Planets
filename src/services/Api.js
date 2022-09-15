@@ -15,12 +15,5 @@ function getList() {
       return result;
     });
 }
-//EXPORTAR EL SERVICIO FETCH
-//export default getList;
-
-/*import axios from 'axios';
-const getList = async () => {
-  const request = axios.get('https://swapi.dev/api/planets/');
-};*/
 
 export default getList;

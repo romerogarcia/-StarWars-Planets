@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 .planets {
   background-image: url(../../images/backgroundPlanets.jpg);
   height: 100%;
@@ -7,56 +8,41 @@
   flex-direction: column;
   align-items: center;
 
-&__title{
-  color: $detail--yellow;
-  text-transform: uppercase;
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  &__title {
+    color: $detail--yellow;
+    font-family: 'Bungee Spice', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-}
-
-&__container{
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 10px;
-  
-
-  &__list{
-    
-    background-color: $background--list;  
-    backdrop-filter: blur(5px);
+  &__container {
     display: flex;
-    align-items: center;
-    align-content: center;
-    
-    
-    
-        &__element{
-      width: 220px;
-      padding: 10px;
-      color: $detail--element;
-      padding: 12px;
-      border-bottom: 2px solid $border--bottom;
-      
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &__list {
+      background-color: $background--list;
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      align-content: center;
+
+      &__element {
+        width: 220px;
+        padding: 10px;
+        color: $detail--element;
+        padding: 12px;
+      }
     }
   }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $detail--yellow;
+  }
 }
-
-
-a{
-  text-decoration: none;
-  cursor: pointer;
-  color:  $detail--yellow;
-}
-
-  
-
-
-
-
-}
-  
-

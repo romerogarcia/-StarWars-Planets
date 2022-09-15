@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-//import planets from './Planets';
 import logo from '../images/logo.png';
-//import Planets from '../components/Planets';
+import swal from 'sweetalert';
+
 function Login() {
   //error
   const [errorMessages, setErrorMessages] = useState({});
@@ -34,6 +34,15 @@ function Login() {
     pass: 'invalid password',
   };
 
+  const alert = () => {
+    swal({
+      title: 'Welcome, registered user!',
+      icon: 'success',
+      button: 'Ok',
+      timer: '2000',
+    });
+  };
+
   function handleSubmit(event) {
     //Prevent page reload
     event.preventDefault();
@@ -50,6 +59,7 @@ function Login() {
         setErrorMessages({ name: 'pass', message: errors.pass });
       } else {
         setIsSubmitted(true);
+        alert();
         navigate('planets');
       }
     } else {
@@ -61,7 +71,7 @@ function Login() {
   return (
     <div className="login">
       <section className="sectionLogin">
-        <img className="sectionLogin__logo" src={logo} alt="Image Yoda" />
+        <img className="sectionLogin__logo" src={logo} alt="Yoda" />
         <p className="sectionLogin__p">
           On this website you can search for the different planets of the Star
           Wars saga through our search engine.

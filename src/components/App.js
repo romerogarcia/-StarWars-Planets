@@ -7,15 +7,6 @@ import Planets from './Planets';
 import NotFound from './Notfound';
 
 function App() {
-  /*const [dataList, setDataList] = useState([]);
-
-  useEffect(() => {
-    getList().then((data) => {
-      setDataList(data);
-    });
-    console.log(getList);
-  }, []);*/
-
   return (
     <>
       <Routes>

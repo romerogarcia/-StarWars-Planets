@@ -47,6 +47,12 @@ background-size: 100% 100%;
     margin-bottom: 10px;
     width: 450px;
     text-align:center;
+    @media (min-width:365px) {
+      width: 300px;
+    }
+    @media (min-width:500px) {
+      width: 450px;
+    }
   }
   &__logo{
     width: 300px;

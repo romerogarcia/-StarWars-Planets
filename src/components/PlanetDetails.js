@@ -1,6 +1,7 @@
 function PlanetDetails(props) {
   return (
     <>
+      z
       <div>
         <div className="planets__container__list">
           <h4 className="planets__container__list__element">
