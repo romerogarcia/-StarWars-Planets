@@ -81,11 +81,23 @@ function Login() {
       <form className="login__form" onSubmit={handleSubmit}>
         <h3 className="login__form__title">SIGN IN</h3>
         <div className="input-container">
-          <input type="text" name="uname" placeholder="Username" required />
+          <input
+            type="text"
+            name="uname"
+            placeholder="Username"
+            autoComplete="on"
+            required
+          />
           {renderErrorMessage('uname')}
         </div>
         <div className="input-container">
-          <input type="password" name="pass" placeholder="Password" required />
+          <input
+            type="password"
+            name="pass"
+            placeholder="Password"
+            autoComplete="on"
+            required
+          />
 
           {renderErrorMessage('pass')}
         </div>

@@ -55,9 +55,11 @@ function Registration() {
         setErrorMessages({ name: 'uname', message: errors.uname });
       } else {
         setIsSubmitted(true);
-        alert();
-        navigate('planets');
       }
+    } else {
+      // Username not found
+      navigate('planets');
+      alert();
     }
   }
 
