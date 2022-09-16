@@ -53,12 +53,11 @@ function Registration() {
       if (userData.username === uname.value) {
         // Invalid password
         setErrorMessages({ name: 'uname', message: errors.uname });
-      } else {
-        setIsSubmitted(true);
       }
     } else {
       // Username not found
-      navigate('planets');
+      setIsSubmitted(true);
+      navigate('/planets');
       alert();
     }
   }

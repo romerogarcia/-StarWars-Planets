@@ -60,7 +60,7 @@ function Login() {
       } else {
         setIsSubmitted(true);
         alert();
-        navigate('planets');
+        navigate('Planets');
       }
     } else {
       // Username not found
