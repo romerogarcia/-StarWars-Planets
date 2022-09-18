@@ -38,8 +38,33 @@
       &__element {
         width: 220px;
         padding: 10px;
-        color: $detail--element;
+        color: $detail--white;
         padding: 12px;
+      }
+    }
+
+    
+  }
+
+
+
+  &__containerButtons{
+    display: flex;
+    align-items: center;
+    
+    &__button{
+      background-color: $detail--p;
+      color: $detail--white;
+      font-size: 15px;
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+      &:hover{
+        background-color: $button--next;
+        color: $detail--white;
+        border: 1px solid $button--next;
       }
     }
   }
@@ -49,9 +74,16 @@
     cursor: pointer;
     color: $detail--yellow;
   }
+
+
+
 }
 
 //style for the name of planets
 .uppercase{
   text-transform: uppercase;
+}
+
+:disabled{
+  border-color: $background--list;
 }

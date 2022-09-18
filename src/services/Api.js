@@ -1,5 +1,5 @@
-function getList() {
-  return fetch('https://swapi.dev/api/planets/')
+/*function getList() {
+  return fetch('https://swapi.dev/api/planets/?page=1')
     .then((response) => response.json())
     .then((response) => {
       const result = response.results.map((item) => {
@@ -16,4 +16,4 @@ function getList() {
     });
 }
 
-export default getList;
+export default getList;*/
