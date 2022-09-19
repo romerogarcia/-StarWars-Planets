@@ -27,6 +27,10 @@ function Login() {
       username: 'Leia',
       password: 'Skywalker',
     },
+    {
+      username: 'Obi-Wan',
+      password: 'Kenobi',
+    },
   ];
 
   const errors = {

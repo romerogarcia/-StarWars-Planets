@@ -1,15 +1,8 @@
 import { useEffect, useState } from 'react';
-import getList from '../services/Api';
 import PlanetDetails from './PlanetDetails';
 
 function Planets() {
   const [starWarsData, setStarWarsData] = useState(null);
-
-  /* useEffect(() => {
-    getList().then((response) => {
-      setStarWarsData(response);
-    });
-  }, []);*/
 
   useEffect(() => {
     fetch('https://swapi.dev/api/planets/?page=1')

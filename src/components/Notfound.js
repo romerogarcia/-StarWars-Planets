@@ -1,12 +1,24 @@
 import '../styles/Layout/Notfound.scss';
+import Stars from '../images/stars.png';
 import { Link } from 'react-router-dom';
 const NotFoundElement = () => {
   return (
-    <div className="containerNotFound">
-      <h2 className="containerNotFound__title">A small problem has occurred</h2>
-      <p>We can't find the detail of this page ☠️ </p>
-      <Link className="containerNotFound__linkBack" to="/"></Link>
-    </div>
+    <>
+      <div className="wrapper">
+        <div className="text_group">
+          <p className="text_404">404</p>
+          <p className="text_lost">
+            The page you are looking for <br />
+            has been lost in space.
+          </p>
+        </div>
+        <div className="window_group">
+          <div className="window_404">
+            <img className="stars" src={Stars}></img>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
