@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/StarWars-Planets/static/css/main.964ebd2f.css",
+    "main.css": "/StarWars-Planets/static/css/main.c5b0a504.css",
     "main.js": "/StarWars-Planets/static/js/main.7f5a01b6.js",
     "static/media/stars.png": "/StarWars-Planets/static/media/stars.698355fee8035b272318.png",
     "static/media/planet2.gif": "/StarWars-Planets/static/media/planet2.02708afaace1d57624d5.gif",
@@ -9,11 +9,11 @@
     "static/media/yoda.png": "/StarWars-Planets/static/media/yoda.72d93f5467587e810c24.png",
     "static/media/logo.png": "/StarWars-Planets/static/media/logo.23037d122e36f6d0b71a.png",
     "index.html": "/StarWars-Planets/index.html",
-    "main.964ebd2f.css.map": "/StarWars-Planets/static/css/main.964ebd2f.css.map",
+    "main.c5b0a504.css.map": "/StarWars-Planets/static/css/main.c5b0a504.css.map",
     "main.7f5a01b6.js.map": "/StarWars-Planets/static/js/main.7f5a01b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.964ebd2f.css",
+    "static/css/main.c5b0a504.css",
     "static/js/main.7f5a01b6.js"
   ]
 }
