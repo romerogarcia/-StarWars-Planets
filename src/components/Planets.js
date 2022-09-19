@@ -10,16 +10,18 @@ function Planets() {
       .then((data) => setStarWarsData(data));
   }, []);
 
-  const handleNext = () => {
+  const handleNext = (event) => {
     const urlNext = starWarsData && starWarsData.next;
+    event.preventDefault();
 
     fetch(urlNext)
       .then((res) => res.json())
       .then((data) => setStarWarsData(data));
   };
 
-  const handlePrevious = () => {
+  const handlePrevious = (event) => {
     const urlPrevious = starWarsData && starWarsData.previous;
+    event.preventDefault();
 
     fetch(urlPrevious)
       .then((res) => res.json())
@@ -36,16 +38,16 @@ function Planets() {
               <PlanetDetails item={item} />
             ))}
 
-            <div className="planets__containerButtons">
+            <div className="planets__container__containerButtons">
               <button
-                className="planets__containerButtons__button"
+                className="planets__container__containerButtons__button"
                 onClick={handlePrevious}
                 disabled={!starWarsData.previous}
               >
                 Previous
               </button>
               <button
-                className="planets__containerButtons__button"
+                className="planets__container__containerButtons__button"
                 onClick={handleNext}
                 disabled={!starWarsData.next}
               >

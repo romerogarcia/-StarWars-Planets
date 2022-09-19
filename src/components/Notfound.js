@@ -1,6 +1,6 @@
 import '../styles/Layout/Notfound.scss';
 import Stars from '../images/stars.png';
-import { Link } from 'react-router-dom';
+
 const NotFoundElement = () => {
   return (
     <>
